@@ -1,7 +1,7 @@
-/* ===============================
-   DW Digital Studio – Portfolio
-   Professional, Tight, Focused
-================================ */
+/* =========================
+   DW Digital Studio Portfolio
+   Clean • Professional • Minimal
+========================= */
 
 :root {
   --bg: #f4f6f8;
@@ -9,12 +9,12 @@
   --text: #111827;
   --muted: #4b5563;
   --brand: #0b7a75;
-  --accent: #0a66c2;
   --border: #e5e7eb;
   --radius: 10px;
   --max-width: 960px;
 }
 
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,9 +28,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===============================
-   Header
-================================ */
+/* ================= HEADER ================= */
 
 .site-header {
   background: var(--card);
@@ -64,23 +62,21 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: var(--brand);
 }
 
 .nav-cta {
   background: var(--brand);
-  color: white !important;
+  color: #fff !important;
   padding: 6px 12px;
   border-radius: 6px;
 }
 
-/* ===============================
-   Hero
-================================ */
+/* ================= HERO ================= */
 
 .hero {
   text-align: center;
-  padding: 60px 20px 50px;
+  padding: 70px 20px 60px;
 }
 
 .hero h1 {
@@ -90,7 +86,10 @@ body {
 
 .hero p {
   color: var(--muted);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-actions {
@@ -100,6 +99,8 @@ body {
   flex-wrap: wrap;
 }
 
+/* ================= BUTTONS ================= */
+
 .btn {
   padding: 10px 16px;
   border-radius: 6px;
@@ -107,11 +108,18 @@ body {
   text-decoration: none;
   display: inline-block;
   transition: 0.15s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .btn.primary {
   background: var(--brand);
-  color: white;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: #096661;
+  transform: translateY(-2px);
 }
 
 .btn.secondary {
@@ -119,23 +127,21 @@ body {
   color: var(--brand);
 }
 
-.btn:hover {
+.btn.secondary:hover {
   transform: translateY(-2px);
 }
 
-/* ===============================
-   Sections
-================================ */
+/* ================= SECTIONS ================= */
 
 .section {
   max-width: var(--max-width);
   margin: auto;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .section-header h2 {
@@ -143,9 +149,11 @@ body {
   margin-bottom: 8px;
 }
 
-/* ===============================
-   Before / After Projects
-================================ */
+.section-header p {
+  color: var(--muted);
+}
+
+/* ================= PROJECTS ================= */
 
 .projects {
   display: grid;
@@ -154,7 +162,7 @@ body {
 
 .project {
   background: var(--card);
-  padding: 24px;
+  padding: 26px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: 0 10px 25px rgba(0,0,0,0.04);
@@ -175,9 +183,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* ===============================
-   Services
-================================ */
+/* ================= SERVICES ================= */
 
 .services-grid {
   display: grid;
@@ -186,7 +192,7 @@ body {
 
 .service-item {
   background: var(--card);
-  padding: 20px;
+  padding: 22px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
@@ -195,13 +201,11 @@ body {
   margin-bottom: 8px;
 }
 
-/* ===============================
-   Contact
-================================ */
+/* ================= CONTACT ================= */
 
 .contact-simple {
   background: var(--card);
-  padding: 25px;
+  padding: 28px;
   border-radius: var(--radius);
   text-align: center;
   border: 1px solid var(--border);
@@ -209,17 +213,30 @@ body {
 
 .email-link {
   font-weight: 700;
-  color: var(--accent);
+  color: var(--brand);
   text-decoration: none;
+  font-size: 1.05rem;
 }
 
 .email-link:hover {
   text-decoration: underline;
 }
 
-/* ===============================
-   Footer
-================================ */
+.contact-notes {
+  margin-top: 18px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-notes ul {
+  margin-top: 8px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+/* ================= FOOTER ================= */
 
 .site-footer {
   text-align: center;
@@ -228,9 +245,7 @@ body {
   color: var(--muted);
 }
 
-/* ===============================
-   Responsive
-================================ */
+/* ================= RESPONSIVE ================= */
 
 @media (min-width: 768px) {
   .projects {
