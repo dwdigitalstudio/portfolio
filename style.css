@@ -225,6 +225,10 @@ body {
   border-radius: var(--radius);
   text-align: center;
   border: 1px solid var(--border);
+
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .email-link {
@@ -241,7 +245,7 @@ body {
 .contact-notes {
   margin-top: 18px;
   text-align: left;
-  max-width: 400px;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -272,6 +276,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 
 
 
