@@ -201,6 +201,22 @@ body {
   margin-bottom: 8px;
 }
 
+.service-cred{
+  font-size: 15px;
+  margin: 12px auto 0;
+  max-width: 420px;      /* controls how wide the list is */
+  text-align: left;      /* keeps bullets readable */
+  padding-left: 22px;    /* bullet indent */
+}
+
+.service-cred li{
+  margin: 6px 0;
+}
+
+.service-cred li::marker{
+  color: #2a7f7b; /* use your brand green/teal */
+}
+
 /* ================= CONTACT ================= */
 
 .contact-simple {
@@ -256,5 +272,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 
 
