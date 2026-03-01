@@ -203,10 +203,10 @@ body {
 
 .service-cred{
   font-size: 15px;
-  margin: 12px auto 0;
-  max-width: 420px;      /* controls how wide the list is */
-  text-align: left;      /* keeps bullets readable */
-  padding-left: 22px;    /* bullet indent */
+  margin: 14px auto 0;
+  max-width: 600px;     /* match your header text width */
+  text-align: left;
+  padding-left: 22px;
 }
 
 .service-cred li{
@@ -272,6 +272,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 
 
 
